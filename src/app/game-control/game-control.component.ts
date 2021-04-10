@@ -6,7 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./game-control.component.css"]
 })
 export class GameControlComponent implements OnInit {
-  startGame() {}
+  count: number = 0;
+  startGame() {
+    this.count++;
+  }
   pauseGame() {}
   constructor() {}
 
