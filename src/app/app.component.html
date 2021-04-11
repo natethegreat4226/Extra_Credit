@@ -2,10 +2,10 @@
   <app-game-control (outputEvent)="receiveMessage($event)"></app-game-control>
 </div>
 <div class="container">
-  <p>This is in App-Component: </p>
+  <p>This is in App-Component:</p>
   <p>{{poNumber}}</p>
 </div>
 <p *ngFor="let game of gameList; let i = index">
-  <app-even *ngIf="i %2 == 0"></app-even>
-  <app-odd *ngIf="i %2 !== 0"></app-odd>
+  <app-even *ngIf="i %2 !== 0"></app-even>
+  <app-odd *ngIf="i %2 == 0"></app-odd>
 </p>
