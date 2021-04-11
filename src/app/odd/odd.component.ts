@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-odd',
-  templateUrl: './odd.component.html',
-  styleUrls: ['./odd.component.css']
+  selector: "app-odd",
+  templateUrl: "./odd.component.html",
+  styleUrls: ["./odd.component.css"]
 })
 export class OddComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

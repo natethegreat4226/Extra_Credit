@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-even',
-  templateUrl: './even.component.html',
-  styleUrls: ['./even.component.css']
+  selector: "app-even",
+  templateUrl: "./even.component.html",
+  styleUrls: ["./even.component.css"]
 })
 export class EvenComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
