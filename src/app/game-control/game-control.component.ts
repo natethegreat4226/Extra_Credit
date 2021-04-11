@@ -19,12 +19,10 @@ export class GameControlComponent implements OnInit {
     this.myTimer = setInterval(() => {
       this.outputEvent.emit(this.count++);
     }, 1000);
-    //this.count = this.count + 1;
     this.outputEvent.emit(this.count);
   }
   stopGame() {
     clearInterval(this.myTimer);
-    this.count = 0;
     this.outputEvent.emit(this.count);
   }
 
