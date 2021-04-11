@@ -5,9 +5,7 @@
   <p>This is in App-Component: </p>
   <p>{{poNumber}}</p>
 </div>
-<div class="container" *ngIf="poNumber %2 !== 0">
-  <app-odd></app-odd>
-</div>
-<div class="container" *ngIf="poNumber %2 == 0">
-  <app-even></app-even>
-</div>
+<p *ngFor="let game of gameList; let i = index">
+  <app-even *ngIf="i %2 == 0"></app-even>
+  <app-odd *ngIf="i %2 !== 0"></app-odd>
+</p>
